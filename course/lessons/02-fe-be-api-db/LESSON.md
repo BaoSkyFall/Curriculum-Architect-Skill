@@ -2,36 +2,37 @@
 
 Thời lượng: 90 phút
 Điều kiện tiên quyết: buổi 1
-Sản phẩm: sơ đồ request/response + wireframe ba trạng thái
+Sản phẩm: sơ đồ request/response + wireframe bốn trạng thái
 
 ## Mục tiêu
 
-Học viên giải thích được boundary FE/BE/API/DB, request/response, JSON và persistent memory.
+Học viên giải thích được ranh giới FE/BE/API/DB, request/response, JSON và sự khác nhau giữa dữ liệu tạm thời với dữ liệu được lưu bền vững.
 
 ## Mô hình tư duy
 
 ```text
-Frontend gửi HTTP request → backend route xử lý → database đọc/ghi → JSON response
+Frontend gửi HTTP request → backend xử lý → cơ sở dữ liệu đọc/ghi → JSON response
 ```
 
 ## Tiến trình
 
-- 0–15: so sánh giao diện, nhân viên xử lý và hồ sơ lưu trữ.
-- 15–35: demo `POST /chat` với JSON.
-- 35–50: chỉ ra trạng thái đang tải, trống, thành công, lỗi.
-- 50–80: lab vẽ request/response và wireframe chat/kết quả.
-- 80–90: kiểm tra hiểu lầm.
+- 0–15: dùng ví dụ đặt lịch để phân biệt giao diện, bộ phận xử lý và nơi lưu hồ sơ.
+- 15–35: demo `POST /appointments` với JSON.
+- 35–50: nhận diện trạng thái đang tải, trống, thành công và lỗi.
+- 50–80: lab vẽ request/response và wireframe.
+- 80–90: sửa các hiểu lầm phổ biến.
 
 ## Bài thực hành
 
-Viết một request mẫu và response mẫu cho “xếp hạng prospect”, sau đó tạo wireframe có 4 states.
-
-Tiêu chí đạt: JSON có field rõ ràng; trạng thái lỗi không bị bỏ quên.
+Viết request và response mẫu cho thao tác tạo lịch hẹn, sau đó vẽ giao diện cho bốn trạng thái: chưa có dữ liệu, đang gửi, thành công và thất bại.
 
 ## Lỗi thường gặp
 
-Gọi cơ sở dữ liệu là “biến toàn cục”; nghĩ API là cơ sở dữ liệu; nhét API key vào frontend.
+- Nghĩ API là cơ sở dữ liệu.
+- Lưu dữ liệu quan trọng chỉ trong biến của giao diện.
+- Đưa API key hoặc logic nhạy cảm vào frontend.
+- Chỉ thiết kế trạng thái thành công.
 
 ## Đánh giá / bài tập về nhà
 
-Giải thích đường đi của một click. Bài tập về nhà: chụp sơ đồ và ghi 3 điểm có thể thất bại.
+Đạt khi học viên giải thích được đường đi của một click. Bài tập về nhà: chọn một thao tác khác và ghi ba điểm có thể thất bại.

@@ -2,22 +2,28 @@
 
 Thời lượng: 90 phút
 Điều kiện tiên quyết: buổi 2, 6
-Sản phẩm: endpoint `/companies/score` hoặc route chấm điểm giả lập
+Sản phẩm: endpoint cho một thao tác nghiệp vụ nhỏ
 
 ## Mục tiêu
 
-Học viên tạo route nhỏ, đọc JSON, kiểm tra input, trả status/error có nghĩa và giữ secret ở server.
+Tạo route nhỏ, kiểm tra input, trả status/error có nghĩa, giữ secret ở server và không để logic backend trôi vào giao diện.
 
 ## Tiến trình
 
 - 0–20: đào sâu request/response.
 - 20–40: demo route Node API và `.env`.
-- 40–75: lab nối frontend giữa kỳ vào backend.
+- 40–75: lab nối prototype giữa kỳ vào backend.
 - 75–90: cố tình gửi input không hợp lệ và debug.
 
 ## Bài thực hành
 
-Triển khai `POST /companies/score` nhận `{company_id, rubric_version}` và trả `{score, tier, evidence}` từ rule giả lập. Thêm lỗi 400 cho input thiếu và 404 cho company không tồn tại.
+Chọn một route phù hợp với prototype:
+
+- `POST /tasks` nhận `{title, due_at}`.
+- `POST /appointments` nhận `{start_at, duration_minutes}`.
+- `POST /documents/search` nhận `{query, limit}`.
+
+Trả JSON có cấu trúc; thêm lỗi 400 cho input thiếu hoặc sai kiểu và 404 cho tài nguyên không tồn tại.
 
 ## Đánh giá
 
@@ -25,4 +31,4 @@ Triển khai `POST /companies/score` nhận `{company_id, rubric_version}` và t
 
 ## Bài tập về nhà
 
-Vẽ contract trước khi thêm LLM: field bắt buộc, field tùy chọn và trạng thái lỗi.
+Vẽ contract trước khi thêm LLM: field bắt buộc, field tùy chọn, mã lỗi và trạng thái giao diện tương ứng.

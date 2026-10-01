@@ -2,15 +2,15 @@
 
 Thời lượng: 90 phút
 Điều kiện tiên quyết: buổi 2, 5
-Sản phẩm: **ICP Discovery Prototype**
+Sản phẩm: prototype frontend có boundary rõ
 
 ## Mục tiêu
 
-Biến design brief thành frontend chạy được với dữ liệu mock và ranh giới rõ; chốt kiến trúc trước LLM.
+Biến design brief thành frontend chạy được với dữ liệu mock; giữ contract ổn định; chốt kiến trúc trước khi thêm dịch vụ phức tạp.
 
 ## Đề bài giữa kỳ
 
-Tạo prototype có ô nhập chat, bảng company/tier và chi tiết company. Có mock API hoặc JSON cục bộ; chưa cần LLM, embeddings hay xác thực production.
+Chọn một trong ba ngữ cảnh: ứng dụng danh sách việc, ứng dụng đặt lịch hoặc thư viện tài liệu. Prototype cần có màn hình danh sách, chi tiết và một thao tác chính. Chưa cần LLM, embeddings hay xác thực production.
 
 ## Tiến trình
 
@@ -18,13 +18,13 @@ Tạo prototype có ô nhập chat, bảng company/tier và chi tiết company. 
 - 15–30: demo xây một màn hình từ spec.
 - 30–70: thực hành theo cặp.
 - 70–80: mỗi nhóm demo 3 phút.
-- 80–90: phản hồi về kiến trúc.
+- 80–90: phản hồi về kiến trúc và contract.
 
 ## Bài thực hành / tiêu chí đạt
 
-- Có 3 màn hình hoặc một màn hình responsive với 4 trạng thái.
-- Frontend lấy dữ liệu qua ranh giới mock, không hardcode mọi response trong component.
-- Có README mô tả luồng dữ liệu và các giới hạn đã biết.
+- Có ba màn hình hoặc một màn hình responsive với bốn trạng thái.
+- Frontend lấy dữ liệu qua mock boundary, không hardcode mọi response trong component.
+- Có README mô tả luồng dữ liệu, contract và các giới hạn đã biết.
 
 ## Đánh giá
 
