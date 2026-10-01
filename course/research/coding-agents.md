@@ -1,31 +1,31 @@
-# Research: Coding Agents and Orchestration
+# Nghiên cứu: Coding agent và điều phối
 
-Verified: 2026-10-01
+Xác minh: 2026-10-01
 
-## Evidence
+## Bằng chứng
 
-- Claude Code official docs describe an agentic coding tool that reads a codebase, edits files, runs commands and integrates with development tools: <https://code.claude.com/docs/en/overview>.
-- OpenAI maintains current Codex documentation at <https://platform.openai.com/docs/codex>.
-- Oh My ClaudeCode describes a teams-first multi-agent orchestration layer: <https://github.com/Yeachan-Heo/oh-my-claudecode>.
-- Oh My Codex describes hooks, agent teams and workflow support for Codex CLI: <https://github.com/Yeachan-Heo/oh-my-codex>.
-- MCP has a current protocol introduction and getting-started material: <https://modelcontextprotocol.io/docs/getting-started/intro>.
+- Tài liệu chính thức của Claude Code mô tả đây là công cụ coding agent có thể đọc codebase, sửa tệp, chạy lệnh và tích hợp với công cụ phát triển: <https://code.claude.com/docs/en/overview>.
+- OpenAI duy trì tài liệu Codex hiện hành tại <https://platform.openai.com/docs/codex>.
+- Oh My ClaudeCode mô tả một lớp điều phối đa agent ưu tiên làm việc theo nhóm: <https://github.com/Yeachan-Heo/oh-my-claudecode>.
+- Oh My Codex mô tả hooks, nhóm agent và hỗ trợ workflow cho Codex CLI: <https://github.com/Yeachan-Heo/oh-my-codex>.
+- MCP có tài liệu giới thiệu giao thức và bắt đầu sử dụng hiện hành: <https://modelcontextprotocol.io/docs/getting-started/intro>.
 
-## Teaching decision
+## Quyết định giảng dạy
 
-Teach the stable model first:
+Trước tiên dạy mô hình ổn định:
 
 ```text
 model → agent → context → tools → skills/MCP → subagents → orchestration → verification
 ```
 
-Then run one tool lab. Students write an agent working agreement containing task, context files, constraints, acceptance criteria and verification command. They do not need to install both OMC and OMX.
+Sau đó thực hiện một bài thực hành công cụ. Học viên viết thỏa thuận làm việc với agent, gồm task, tệp ngữ cảnh, ràng buộc, tiêu chí nghiệm thu và lệnh kiểm tra. Không cần cài cả OMC lẫn OMX.
 
-## Risks
+## Rủi ro
 
-- CLI flags, installation and names can change quickly.
-- Multi-agent parallelism can increase cost, context collisions and debugging difficulty.
-- A successful generated patch is not proof of correctness.
+- Cờ CLI, cách cài đặt và tên gọi có thể thay đổi nhanh.
+- Chạy song song nhiều agent có thể làm tăng chi phí, xung đột context và độ khó khi debug.
+- Một bản vá được tạo thành công không phải bằng chứng rằng nó đúng.
 
-## Fallback
+## Phương án dự phòng
 
-If an orchestration layer fails, use native agent tasks and a written handoff table. The learning objective remains decomposition and verification.
+Nếu lớp điều phối gặp lỗi, dùng task native của agent và bảng bàn giao bằng văn bản. Mục tiêu học tập vẫn là phân rã công việc và kiểm chứng.

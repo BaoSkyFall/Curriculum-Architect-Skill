@@ -1,25 +1,25 @@
-# Research: Data and Retrieval Stack
+# Nghiên cứu: Ngăn xếp dữ liệu và retrieval
 
-Verified: 2026-10-01
+Xác minh: 2026-10-01
 
-## Learning progression
+## Tiến trình học tập
 
-1. Start with CSV rows and a visible table.
-2. Persist company/outcome/signal records in SQLite.
-3. Add ingestion logs and rejected-row reasons.
-4. Add enrichment as a separate source with provenance.
-5. Teach chunking and metadata on a small document set.
-6. Compare keyword filtering with embeddings/retrieval.
-7. Add RAG only after the retrieval test set exists.
+1. Bắt đầu với các dòng CSV và một bảng có thể quan sát.
+2. Lưu các record company/outcome/signal trong SQLite.
+3. Thêm log ingestion và lý do loại bỏ từng dòng.
+4. Thêm enrichment như một nguồn riêng có provenance.
+5. Dạy chunking và metadata trên một tập tài liệu nhỏ.
+6. So sánh lọc theo từ khóa với embeddings/retrieval.
+7. Chỉ thêm RAG sau khi đã có bộ kiểm thử retrieval.
 
-## Recommendation
+## Khuyến nghị
 
-Use SQLite for the first labs and either a simple local retrieval implementation or Postgres/pgvector/Supabase for the integrated capstone. A managed vector database is optional; it is not required to understand RAG.
+Dùng SQLite cho các bài thực hành đầu tiên, sau đó dùng một triển khai retrieval cục bộ đơn giản hoặc Postgres/pgvector/Supabase cho đồ án cuối khóa tích hợp. Cơ sở dữ liệu vector được quản lý là tùy chọn, không bắt buộc để hiểu RAG.
 
-## Evaluation
+## Đánh giá
 
-Every retrieval demo has labeled questions and expected evidence. Track whether the answer cites a relevant record, not only whether it sounds fluent.
+Mỗi demo retrieval đều có câu hỏi được gắn nhãn và evidence kỳ vọng. Theo dõi việc câu trả lời có trích dẫn đúng record liên quan hay không, thay vì chỉ xem câu trả lời có trôi chảy.
 
-## Safety
+## An toàn
 
-Use synthetic or anonymized CRM data, record source and timestamp for enrichment, and show students how to delete or redact a record before sending context to an LLM.
+Dùng dữ liệu CRM giả lập hoặc ẩn danh, ghi nguồn và thời điểm của enrichment, đồng thời hướng dẫn học viên xóa hoặc che thông tin trong record trước khi gửi context cho LLM.

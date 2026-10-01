@@ -1,29 +1,29 @@
-# Buổi 9 — Database và schema cho ICP
+# Buổi 9 — Cơ sở dữ liệu và schema cho ICP
 
-Duration: 90 phút
-Prerequisites: buổi 2, 7
-Artifact: schema + CRUD + audit fields
+Thời lượng: 90 phút
+Điều kiện tiên quyết: buổi 2, 7
+Sản phẩm: schema + CRUD + trường audit
 
-## Objectives
+## Mục tiêu
 
 Hiểu table/row/column/ID/relationship/query; lưu được company, outcome, signal, score và evidence.
 
-## Suggested schema
+## Schema gợi ý
 
 `companies`, `outcomes`, `signals`, `scores`, `documents`; mọi enrichment có `source` và `observed_at`.
 
-## Lab
+## Bài thực hành
 
-Seed 30 company giả lập; viết query/filter “đã mua”, “ngành X”, “Tier 1”; hiển thị score history theo `rubric_version`.
+Nạp seed 30 company giả lập; viết query/filter “đã mua”, “ngành X”, “Tier 1”; hiển thị lịch sử score theo `rubric_version`.
 
-## Common mistakes
+## Lỗi thường gặp
 
 Ghi đè score cũ; trộn raw và cleaned data; không lưu nguồn của signal.
 
-## Assessment
+## Đánh giá
 
-Pass khi schema trả lời được “score này dựa trên evidence nào và dữ liệu được quan sát lúc nào?”.
+Đạt khi schema trả lời được “score này dựa trên evidence nào và dữ liệu được quan sát lúc nào?”.
 
-## Homework
+## Bài tập về nhà
 
 Thêm một field có thể gây bias và ghi cách kiểm tra/loại bỏ nó.

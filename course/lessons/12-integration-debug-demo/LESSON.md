@@ -1,10 +1,10 @@
-# Buổi 12 — Tích hợp, debugging, security và demo final
+# Buổi 12 — Tích hợp, debug, bảo mật và demo cuối khóa
 
-Duration: 90 phút
-Prerequisites: tất cả buổi trước
-Artifact: **Final ICP Chatbot**
+Thời lượng: 90 phút
+Điều kiện tiên quyết: tất cả buổi trước
+Sản phẩm: **Final ICP Chatbot**
 
-## Final flow
+## Quy trình cuối khóa
 
 ```text
 CRM → ingestion → database → signals/evidence → scoring rubric
@@ -12,26 +12,26 @@ CRM → ingestion → database → signals/evidence → scoring rubric
 user question → frontend → backend → retrieval/LLM → answer + tier + evidence
 ```
 
-## Flow
+## Tiến trình
 
-- 0–15: smoke test theo acceptance checklist.
-- 15–35: mỗi nhóm chạy một failure scenario.
-- 35–70: demo final 5 phút/nhóm.
-- 70–85: peer review theo rubric.
-- 85–90: reflection và next steps.
+- 0–15: smoke test theo checklist nghiệm thu.
+- 15–35: mỗi nhóm chạy một kịch bản lỗi.
+- 35–70: mỗi nhóm demo cuối khóa 5 phút.
+- 70–85: đánh giá chéo theo rubric.
+- 85–90: phản hồi và bước tiếp theo.
 
-## Required demo
+## Demo bắt buộc
 
-Import dataset, hỏi company giống Tier 1, xem evidence, xem score/tier, xem historical backtest và chỉ ra một giới hạn.
+Import dataset, hỏi company giống Tier 1, xem evidence, xem score/tier, xem backtest lịch sử và chỉ ra một giới hạn.
 
-## Assessment
+## Đánh giá
 
-25% architecture/data-flow explanation; 25% working flow; 20% evidence and backtest; 15% debugging/security; 15% tool/decision reflection.
+25% giải thích kiến trúc/luồng dữ liệu; 25% luồng hoạt động; 20% evidence và backtest; 15% debug/bảo mật; 15% phản hồi về tool/quyết định.
 
-## Minimum security check
+## Kiểm tra bảo mật tối thiểu
 
 Không commit secrets; API key chỉ ở backend; dữ liệu demo đã ẩn danh; có fallback khi LLM/retrieval fail; không biến score thành quyết định tự động không giám sát.
 
-## Exit ticket
+## Phiếu kết thúc
 
 Học viên trả lời: “Nếu Stitch, OMX hoặc model provider biến mất ngày mai, phần kiến thức nào của em vẫn dùng được và cần thay adapter nào?”.

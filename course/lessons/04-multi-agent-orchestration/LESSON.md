@@ -1,35 +1,35 @@
-# Buổi 4 — Multi-agent orchestration và task decomposition
+# Buổi 4 — Điều phối đa agent và phân rã task
 
-Duration: 90 phút
-Prerequisites: buổi 3
-Artifact: decomposition board + handoff log
+Thời lượng: 90 phút
+Điều kiện tiên quyết: buổi 3
+Sản phẩm: bảng phân rã + log bàn giao
 
-## Objectives
+## Mục tiêu
 
-Biết khi nào một agent đủ dùng; chia feature thành task độc lập; nêu chi phí và rủi ro parallel work.
+Biết khi nào một agent là đủ; chia tính năng thành task độc lập; nêu chi phí và rủi ro của công việc song song.
 
-## Mental model
+## Mô hình tư duy
 
 ```text
 Outcome → work packages → agent/subagent → handoff → integration → verification
 ```
 
-## Flow
+## Tiến trình
 
-- 0–15: single-agent baseline.
-- 15–30: phân biệt parallelizable và shared-state work.
+- 0–15: mốc chuẩn với một agent.
+- 15–30: phân biệt công việc có thể chạy song song và công việc dùng chung trạng thái.
 - 30–45: demo OMX hoặc OMC theo track đã chọn.
-- 45–75: lab decomposition cho ICP pipeline.
-- 75–90: compare “nhiều agent” với “một agent có checklist”.
+- 45–75: lab phân rã pipeline ICP.
+- 75–90: so sánh “nhiều agent” với “một agent có checklist”.
 
-## Lab
+## Bài thực hành
 
-Chia feature “import CRM và hiển thị Tier” thành 3 task: schema, ingestion, UI. Mỗi task có file ownership, input, output, dependency và verification. Chạy tối đa hai task song song nếu runtime hỗ trợ.
+Chia tính năng “import CRM và hiển thị Tier” thành 3 task: schema, ingestion, UI. Mỗi task có phạm vi sở hữu tệp, input, output, dependency và bước kiểm chứng. Chạy tối đa hai task song song nếu runtime hỗ trợ.
 
-## Assessment
+## Đánh giá
 
-Pass khi có handoff rõ và không có hai task cùng sửa một boundary mà không thỏa thuận.
+Đạt khi có bàn giao rõ ràng và không có hai task cùng sửa một ranh giới mà không thỏa thuận.
 
-## Homework
+## Bài tập về nhà
 
 Viết một trường hợp multi-agent sẽ làm chậm dự án và lý do.

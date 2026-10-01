@@ -1,23 +1,23 @@
-# Research: Design Tools
+# Nghiên cứu: Công cụ thiết kế
 
-Verified: 2026-10-01
+Xác minh: 2026-10-01
 
-## Role separation
+## Phân tách vai trò
 
-| Layer | Tool example | What learners should understand |
+| Lớp | Ví dụ công cụ | Điều người học cần hiểu |
 |---|---|---|
-| Design knowledge | UI/UX Pro Max, teacher rubric | hierarchy, spacing, typography, states, accessibility and review |
-| Design generation | Google Stitch + MCP | prompt/brief → visual exploration → handoff artifact |
-| Full-app abstraction | Lovable | prompt → application, with boundaries hidden behind a platform |
+| Kiến thức thiết kế | UI/UX Pro Max, rubric của giảng viên | hệ thống phân cấp, khoảng cách, typography, trạng thái, khả năng tiếp cận và rà soát |
+| Sinh thiết kế | Google Stitch + MCP | prompt/brief → khám phá trực quan → sản phẩm bàn giao |
+| Trừu tượng hóa toàn ứng dụng | Lovable | prompt → ứng dụng, với các ranh giới bị nền tảng che khuất |
 
-## Recommendation
+## Khuyến nghị
 
-Use a tool-agnostic `DESIGN_BRIEF.md` as the source of truth. Stitch is the preferred optional generator when the account and MCP integration work. Export a screenshot/HTML/spec and continue the lab without Stitch. Use UI/UX Pro Max to critique the artifact, not to define the course. Show Lovable only to make abstraction trade-offs visible.
+Dùng `DESIGN_BRIEF.md` không phụ thuộc công cụ làm nguồn sự thật. Stitch là lựa chọn ưu tiên nếu tài khoản và tích hợp MCP hoạt động. Xuất screenshot/HTML/spec rồi tiếp tục bài thực hành mà không cần Stitch. Dùng UI/UX Pro Max để phê bình sản phẩm, không dùng để định nghĩa khóa học. Chỉ giới thiệu Lovable nhằm làm rõ đánh đổi của việc trừu tượng hóa.
 
-## Why not choose one winner?
+## Vì sao không chọn một công cụ duy nhất?
 
-The tools do not solve the same problem. Picking Lovable because it creates a full app quickly would undermine the course outcome: students must understand the frontend/backend/API boundary. Picking Stitch as the foundation would make the course brittle if access or MCP packaging changes.
+Các công cụ này không giải quyết cùng một bài toán. Chọn Lovable vì nó tạo ứng dụng đầy đủ rất nhanh sẽ làm lệch chuẩn đầu ra của khóa học: học viên phải hiểu ranh giới frontend/backend/API. Chọn Stitch làm nền tảng sẽ khiến khóa học dễ bị ảnh hưởng nếu quyền truy cập hoặc gói MCP thay đổi.
 
-## Fallback artifact
+## Sản phẩm dự phòng
 
-The teacher supplies three screens as PNG or HTML: chat, company detail, and tier/results table. Students still write states and acceptance criteria.
+Giảng viên cung cấp ba màn hình dưới dạng PNG hoặc HTML: chat, chi tiết company và bảng tier/kết quả. Học viên vẫn phải viết các trạng thái và tiêu chí nghiệm thu.

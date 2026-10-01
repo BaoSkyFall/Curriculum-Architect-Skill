@@ -1,32 +1,32 @@
-# Buổi 10 — Data pipeline: CRM → clean → enrich → store
+# Buổi 10 — Pipeline dữ liệu: CRM → làm sạch → enrichment → lưu trữ
 
-Duration: 90 phút
-Prerequisites: buổi 9
-Artifact: ingestion run report
+Thời lượng: 90 phút
+Điều kiện tiên quyết: buổi 9
+Sản phẩm: báo cáo một lần chạy ingestion
 
-## Objectives
+## Mục tiêu
 
-Mô tả pipeline raw/load/clean/transform/store; giữ provenance và rejected rows; không xem enrichment là sự thật tuyệt đối.
+Mô tả pipeline raw/load/clean/transform/store; giữ provenance và các dòng bị loại; không xem enrichment là sự thật tuyệt đối.
 
-## Flow
+## Tiến trình
 
-- 0–15: inspect messy CSV.
-- 15–30: demo pipeline log.
-- 30–75: lab ingest + normalize + validate.
-- 75–90: failure analysis.
+- 0–15: kiểm tra CSV lộn xộn.
+- 15–30: demo log pipeline.
+- 30–75: lab ingest + chuẩn hóa + kiểm tra hợp lệ.
+- 75–90: phân tích lỗi.
 
-## Lab
+## Bài thực hành
 
-Đọc CSV CRM và file enrichment; chuẩn hóa tên/domain/size band; reject row thiếu ID; ghi `run_id`, counts và lý do reject; upsert vào database.
+Đọc CSV CRM và file enrichment; chuẩn hóa tên/domain/size band; loại dòng thiếu ID; ghi `run_id`, số lượng và lý do loại; upsert vào cơ sở dữ liệu.
 
-## Success criteria
+## Tiêu chí đạt
 
-Có raw count, clean count, rejected count, source, timestamp và một sample trước/sau transform.
+Có số lượng raw, số lượng clean, số lượng bị loại, source, timestamp và một mẫu trước/sau transform.
 
-## Assessment
+## Đánh giá
 
-Pass khi chạy lại pipeline không tạo duplicate và người học giải thích được data lineage.
+Đạt khi chạy lại pipeline không tạo bản ghi trùng và người học giải thích được nguồn gốc dữ liệu.
 
-## Homework
+## Bài tập về nhà
 
 Chọn một transform có thể làm sai ICP và viết test dữ liệu cho nó.

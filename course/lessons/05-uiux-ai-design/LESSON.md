@@ -1,29 +1,29 @@
-# Buổi 5 — UI/UX mental model và AI-assisted design
+# Buổi 5 — Mô hình tư duy UI/UX và thiết kế có AI hỗ trợ
 
-Duration: 90 phút
-Prerequisites: buổi 2
-Artifact: design brief + screen states
+Thời lượng: 90 phút
+Điều kiện tiên quyết: buổi 2
+Sản phẩm: design brief + trạng thái màn hình
 
-## Objectives
+## Mục tiêu
 
-Phân biệt design knowledge, design generation và full-app abstraction; viết brief có user, task, hierarchy, state và accessibility.
+Phân biệt kiến thức thiết kế, sinh thiết kế và trừu tượng hóa toàn ứng dụng; viết brief có người dùng, task, hệ thống phân cấp, trạng thái và khả năng tiếp cận.
 
-## Flow
+## Tiến trình
 
-- 0–15: dissect một màn hình ICP tốt/xấu.
-- 15–30: typography, spacing, hierarchy, empty/error/loading.
-- 30–45: demo Stitch nếu có access; fallback bằng PNG/HTML.
-- 45–75: lab tạo 3 màn hình: chat, company detail, tier table.
-- 75–90: critique theo rubric.
+- 0–15: phân tích một màn hình ICP tốt/xấu.
+- 15–30: typography, khoảng cách, hệ thống phân cấp, trạng thái trống/lỗi/đang tải.
+- 30–45: demo Stitch nếu có quyền truy cập; dùng PNG/HTML làm phương án dự phòng.
+- 45–75: lab tạo 3 màn hình: chat, chi tiết company, bảng tier.
+- 75–90: phê bình theo rubric.
 
-## Lab
+## Bài thực hành
 
-Viết `DESIGN_BRIEF`: user persona, primary task, data fields, states, responsive behavior, one accessibility rule. Dùng Stitch hoặc tool tương đương để tạo exploration; giữ brief làm source of truth.
+Viết `DESIGN_BRIEF`: chân dung người dùng, task chính, các field dữ liệu, trạng thái, hành vi responsive và một quy tắc tiếp cận. Dùng Stitch hoặc tool tương đương để tạo bản khám phá; giữ brief làm nguồn sự thật.
 
-## Assessment
+## Đánh giá
 
-Pass khi design có hierarchy rõ, state error/empty và không yêu cầu tool-specific knowledge để hiểu.
+Đạt khi thiết kế có hệ thống phân cấp rõ, trạng thái lỗi/trống và không yêu cầu kiến thức riêng của tool để hiểu.
 
-## Homework
+## Bài tập về nhà
 
 Chọn một quyết định UI và giải thích nó dựa trên user task, không dựa trên “AI thích”.

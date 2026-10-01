@@ -1,80 +1,80 @@
-# Tech Radar
+# Radar công nghệ
 
-Last verified: 2026-10-01
-Review interval: before every cohort, and immediately after a major release or access change.
+Xác minh gần nhất: 2026-10-01
+Chu kỳ rà soát: trước mỗi khóa và ngay sau khi có bản phát hành lớn hoặc thay đổi quyền truy cập.
 
-## Summary
+## Tóm tắt
 
-| Technology | Role | Status | Teach | Risk | Decision |
+| Công nghệ | Vai trò | Trạng thái | Dạy | Rủi ro | Quyết định |
 |---|---|---|---|---|---|
-| OpenAI Codex | coding-agent implementation | active | optional primary | medium | Use if instructor already supports Codex; concepts remain portable |
-| Claude Code | coding-agent implementation | active | optional primary | medium | Use as the single class track if Anthropic access is easier |
-| Oh My Codex (OMX) | orchestration layer | active / fast-moving | optional | high | Teach orchestration concepts; demo only after native agent workflow works |
-| Oh My ClaudeCode (OMC) | orchestration layer | active / fast-moving | optional | high | Same role as OMX; do not teach both in the core path |
-| MCP | tool/data connection protocol | active | yes | medium | Teach the boundary and one safe server, not a catalog of servers |
-| Google Stitch + Stitch MCP | design generation / handoff | active / fast-moving | optional | high | Use for design artifact if access is reliable; keep screenshot/spec fallback |
-| UI/UX Pro Max | design intelligence skill | active community project | optional | medium | Use as a rubric/reference, not as the design foundation |
-| Lovable | full-app abstraction | active | comparison only | high | Show why abstraction is useful and what it hides |
-| React + Vite | frontend implementation | active | yes | low | Stable enough for a visible frontend boundary |
-| Node.js API | backend implementation | active | yes | low | Keep endpoint logic small; use one language across FE/BE |
-| SQLite / Postgres | persistence | active | yes | low | SQLite for lab; Postgres/Supabase optional for shared deployment |
-| LLM provider SDK | model call | active / fast-moving | yes | medium | Teach messages and structured output; keep provider adapter thin |
-| Embeddings + retrieval | semantic search concept | active | yes | medium | Implement small dataset first; vector DB is optional |
+| OpenAI Codex | triển khai coding agent | đang hoạt động | tùy chọn chính | trung bình | Dùng nếu giảng viên đã hỗ trợ Codex; khái niệm vẫn có thể chuyển đổi |
+| Claude Code | triển khai coding agent | đang hoạt động | tùy chọn chính | trung bình | Dùng làm track duy nhất nếu quyền truy cập Anthropic thuận tiện hơn |
+| Oh My Codex (OMX) | lớp điều phối | đang hoạt động / thay đổi nhanh | tùy chọn | cao | Dạy khái niệm điều phối; chỉ demo sau khi workflow agent native đã chạy |
+| Oh My ClaudeCode (OMC) | lớp điều phối | đang hoạt động / thay đổi nhanh | tùy chọn | cao | Vai trò giống OMX; không dạy cả hai trong lộ trình cốt lõi |
+| MCP | giao thức kết nối tool/dữ liệu | đang hoạt động | có | trung bình | Dạy ranh giới và một server an toàn, không dạy cả danh mục server |
+| Google Stitch + Stitch MCP | sinh thiết kế / bàn giao | đang hoạt động / thay đổi nhanh | tùy chọn | cao | Dùng để tạo sản phẩm thiết kế nếu quyền truy cập ổn định; luôn giữ phương án screenshot/spec |
+| UI/UX Pro Max | skill về tư duy thiết kế | dự án cộng đồng đang hoạt động | tùy chọn | trung bình | Dùng như rubric/tài liệu tham khảo, không làm nền tảng thiết kế |
+| Lovable | trừu tượng hóa toàn ứng dụng | đang hoạt động | chỉ so sánh | cao | Cho thấy lợi ích của trừu tượng hóa và những gì nó che giấu |
+| React + Vite | triển khai frontend | đang hoạt động | có | thấp | Đủ ổn định để thể hiện rõ ranh giới frontend |
+| Node.js API | triển khai backend | đang hoạt động | có | thấp | Giữ logic endpoint nhỏ; dùng một ngôn ngữ cho FE/BE |
+| SQLite / Postgres | lưu trữ | đang hoạt động | có | thấp | SQLite cho bài lab; Postgres/Supabase tùy chọn cho triển khai dùng chung |
+| SDK của provider LLM | lời gọi model | đang hoạt động / thay đổi nhanh | có | trung bình | Dạy messages và structured output; giữ adapter provider mỏng |
+| Embeddings + retrieval | khái niệm tìm kiếm ngữ nghĩa | đang hoạt động | có | trung bình | Trước tiên triển khai trên tập dữ liệu nhỏ; vector DB là tùy chọn |
 
-## Entries
+## Chi tiết
 
 ### Codex / Claude Code
 
-status: active
+trạng thái: đang hoạt động
 last_verified: 2026-10-01
-evidence: [OpenAI Codex docs](https://platform.openai.com/docs/codex), [Claude Code overview](https://code.claude.com/docs/en/overview)
+bằng chứng: [Tài liệu OpenAI Codex](https://platform.openai.com/docs/codex), [Tổng quan Claude Code](https://code.claude.com/docs/en/overview)
 
-Teaching decision: choose one runtime for setup and labs. Outcomes are agent, context, tool, verification and task decomposition—not memorizing a CLI.
+Quyết định giảng dạy: chọn một runtime cho khâu thiết lập và bài lab. Chuẩn đầu ra là agent, context, tool, verification và phân rã task — không phải ghi nhớ một CLI.
 
 ### OMX / OMC
 
-status: active / fast-moving
+trạng thái: đang hoạt động / thay đổi nhanh
 last_verified: 2026-10-01
-evidence: [oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex), [oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode)
+bằng chứng: [oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex), [oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode)
 
-Teaching decision: neither is obsolete based on current repository activity, but both are too fast-moving to be the course spine. Use one short implementation lab after native agent concepts.
+Quyết định giảng dạy: chưa có cơ sở để xem công cụ nào đã lỗi thời dựa trên hoạt động repository hiện tại, nhưng cả hai thay đổi quá nhanh để làm trục chính của khóa học. Chỉ dùng một bài lab triển khai ngắn sau khi dạy khái niệm agent native.
 
 ### MCP
 
-status: active
+trạng thái: đang hoạt động
 last_verified: 2026-10-01
-evidence: [MCP introduction](https://modelcontextprotocol.io/docs/getting-started/intro)
+bằng chứng: [Giới thiệu MCP](https://modelcontextprotocol.io/docs/getting-started/intro)
 
-Teaching decision: explain MCP as a standard boundary for exposing tools/data to an agent. Students must inspect permissions and failure modes; no broad server marketplace survey.
+Quyết định giảng dạy: giải thích MCP như một ranh giới tiêu chuẩn để cung cấp tool/dữ liệu cho agent. Học viên phải kiểm tra quyền và các dạng lỗi; không khảo sát lan rộng các marketplace server.
 
 ### Stitch / Stitch MCP
 
-status: active / fast-moving
+trạng thái: đang hoạt động / thay đổi nhanh
 last_verified: 2026-10-01
-evidence: [Google Stitch](https://stitch.withgoogle.com/), [Google Stitch skills](https://github.com/google-labs-code/stitch-skills), [Stitch MCP CLI](https://github.com/davideast/stitch-mcp)
+bằng chứng: [Google Stitch](https://stitch.withgoogle.com/), [Skill Google Stitch](https://github.com/google-labs-code/stitch-skills), [Stitch MCP CLI](https://github.com/davideast/stitch-mcp)
 
-Teaching decision: useful for generating design explorations and handoff artifacts. Because access and integration can change, every lab must work from a screenshot, HTML export or design brief if Stitch is unavailable.
+Quyết định giảng dạy: hữu ích để sinh bản khám phá thiết kế và sản phẩm bàn giao. Vì quyền truy cập và tích hợp có thể thay đổi, mọi bài lab phải chạy được từ screenshot, HTML export hoặc design brief nếu Stitch không khả dụng.
 
 ### UI/UX Pro Max
 
-status: active community project
+trạng thái: dự án cộng đồng đang hoạt động
 last_verified: 2026-10-01
-evidence: [repository](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
+bằng chứng: [repository](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
 
-Teaching decision: optional design-intelligence reference for hierarchy, typography, spacing and review. Do not make its command syntax a prerequisite.
+Quyết định giảng dạy: tài liệu tham khảo tùy chọn về tư duy thiết kế, hệ thống phân cấp, typography, khoảng cách và rà soát. Không biến cú pháp lệnh của công cụ thành điều kiện tiên quyết.
 
 ### Lovable
 
-status: active
+trạng thái: đang hoạt động
 last_verified: 2026-10-01
-evidence: [Lovable docs](https://docs.lovable.dev/introduction)
+bằng chứng: [Tài liệu Lovable](https://docs.lovable.dev/introduction)
 
-Teaching decision: use for a 10-minute compare-and-contrast. It is a full-app abstraction, so it is not interchangeable with Stitch or UI/UX Pro Max and should not replace boundary lessons.
+Quyết định giảng dạy: dùng cho phần so sánh 10 phút. Đây là công cụ trừu tượng hóa toàn ứng dụng, nên không thể thay thế Stitch hoặc UI/UX Pro Max và không được thay cho các bài học về ranh giới.
 
-### LLM / retrieval stack
+### Ngăn xếp LLM / retrieval
 
-status: active / fast-moving
+trạng thái: đang hoạt động / thay đổi nhanh
 last_verified: 2026-10-01
-evidence: [OpenAI embeddings](https://platform.openai.com/docs/guides/embeddings), [OpenAI retrieval](https://platform.openai.com/docs/guides/retrieval), [Supabase AI](https://supabase.com/docs/guides/ai)
+bằng chứng: [OpenAI embeddings](https://platform.openai.com/docs/guides/embeddings), [OpenAI retrieval](https://platform.openai.com/docs/guides/retrieval), [Supabase AI](https://supabase.com/docs/guides/ai)
 
-Teaching decision: keep an adapter around the provider, use structured output, and evaluate retrieval on a small labeled test set. Do not promise model-specific behavior across providers.
+Quyết định giảng dạy: giữ một adapter quanh provider, dùng structured output và đánh giá retrieval trên bộ kiểm thử nhỏ có gắn nhãn. Không hứa hẹn hành vi đặc thù của một model sẽ giống nhau giữa các provider.

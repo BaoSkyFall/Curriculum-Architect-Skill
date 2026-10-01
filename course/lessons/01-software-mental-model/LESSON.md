@@ -1,38 +1,38 @@
-# Buổi 1 — Software mental model và vibe coding
+# Buổi 1 — Mô hình tư duy phần mềm và vibe coding
 
-Duration: 90 phút
-Prerequisites: không
-Artifact: system map cho ICP chatbot
+Thời lượng: 90 phút
+Điều kiện tiên quyết: không
+Sản phẩm: sơ đồ hệ thống cho ICP chatbot
 
-## Objectives
+## Mục tiêu
 
-Học viên vẽ được input, processing, storage, output và failure points; phân biệt “AI tạo code” với “mình hiểu hệ thống”.
+Học viên vẽ được input, processing, storage, output và các điểm lỗi; phân biệt “AI tạo code” với “mình hiểu hệ thống”.
 
-## Mental model
+## Mô hình tư duy
 
 ```text
 Người dùng → giao diện → service → dữ liệu/model → kết quả
                  ↘ lỗi / trạng thái / log ↗
 ```
 
-## Flow
+## Tiến trình
 
 - 0–10: hỏi “CRM có thể nói gì về khách hàng?”
 - 10–30: giải thích app như hệ thống biến input thành output.
-- 30–50: demo trace một câu hỏi ICP bằng giấy.
-- 50–80: lab vẽ system map và annotate boundary.
-- 80–90: explain-back.
+- 30–50: demo lần theo một câu hỏi ICP bằng giấy.
+- 50–80: lab vẽ sơ đồ hệ thống và chú thích ranh giới.
+- 80–90: học viên giải thích lại.
 
-## Lab
+## Bài thực hành
 
 Vẽ các block `browser`, `API`, `database`, `LLM`, `retrieval`, `data pipeline`; với mỗi block ghi input, output và một lỗi có thể xảy ra.
 
-Success: người học trace được câu “Công ty nào giống Tier 1?” mà không dùng tên tool.
+Tiêu chí đạt: người học lần theo được câu “Công ty nào giống Tier 1?” mà không dùng tên tool.
 
-## Check / assessment
+## Kiểm tra / đánh giá
 
-Đánh giá bằng lời giải thích 2 phút và sửa một sơ đồ cố tình thiếu database. Không chấm thuật ngữ.
+Đánh giá bằng lời giải thích 2 phút và sửa một sơ đồ cố tình thiếu cơ sở dữ liệu. Không chấm thuật ngữ.
 
-## Homework
+## Bài tập về nhà
 
 Viết 5 câu hỏi mà chatbot ICP phải trả lời và đánh dấu dữ liệu cần để trả lời mỗi câu.

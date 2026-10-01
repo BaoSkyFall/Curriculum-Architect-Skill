@@ -1,35 +1,35 @@
-# Buổi 6 — Từ design artifact đến frontend vertical slice (Giữa kỳ)
+# Buổi 6 — Từ sản phẩm thiết kế đến lát cắt frontend (Giữa kỳ)
 
-Duration: 90 phút
-Prerequisites: buổi 2, 5
-Artifact: **ICP Discovery Prototype**
+Thời lượng: 90 phút
+Điều kiện tiên quyết: buổi 2, 5
+Sản phẩm: **ICP Discovery Prototype**
 
-## Objectives
+## Mục tiêu
 
-Biến design brief thành frontend chạy được với mock data và boundary rõ; chốt architecture trước LLM.
+Biến design brief thành frontend chạy được với dữ liệu mock và ranh giới rõ; chốt kiến trúc trước LLM.
 
-## Midterm brief
+## Đề bài giữa kỳ
 
-Tạo prototype có chat input, bảng company/tier và company detail. Có mock API hoặc local JSON; chưa cần LLM, embeddings hay production auth.
+Tạo prototype có ô nhập chat, bảng company/tier và chi tiết company. Có mock API hoặc JSON cục bộ; chưa cần LLM, embeddings hay xác thực production.
 
-## Flow
+## Tiến trình
 
-- 0–15: inspect starter repo và boundary.
-- 15–30: demo build một screen từ spec.
-- 30–70: paired lab.
-- 70–80: 3-minute demo mỗi nhóm.
-- 80–90: architecture feedback.
+- 0–15: kiểm tra starter repo và ranh giới.
+- 15–30: demo xây một màn hình từ spec.
+- 30–70: thực hành theo cặp.
+- 70–80: mỗi nhóm demo 3 phút.
+- 80–90: phản hồi về kiến trúc.
 
-## Lab / success criteria
+## Bài thực hành / tiêu chí đạt
 
-- Có 3 screen hoặc một screen responsive với 4 states.
-- Frontend lấy data qua mock boundary, không hardcode mọi response trong component.
-- Có README data flow và known limitations.
+- Có 3 màn hình hoặc một màn hình responsive với 4 trạng thái.
+- Frontend lấy dữ liệu qua ranh giới mock, không hardcode mọi response trong component.
+- Có README mô tả luồng dữ liệu và các giới hạn đã biết.
 
-## Assessment
+## Đánh giá
 
-30% data-flow explanation, 30% observable UI states, 20% boundary discipline, 20% reflection/debug log.
+30% giải thích luồng dữ liệu, 30% trạng thái UI quan sát được, 20% kỷ luật ranh giới, 20% nhật ký phản hồi/debug.
 
-## Bridge
+## Kết nối sang buổi sau
 
 Buổi sau thay mock boundary bằng backend route thật; UI giữ nguyên contract nếu contract tốt.

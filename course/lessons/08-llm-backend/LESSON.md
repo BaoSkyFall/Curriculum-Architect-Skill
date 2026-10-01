@@ -1,31 +1,31 @@
-# Buổi 8 — Nhúng LLM vào backend
+# Buổi 8 — Tích hợp LLM vào backend
 
-Duration: 90 phút
-Prerequisites: buổi 7
-Artifact: structured extraction/scoring explanation endpoint
+Thời lượng: 90 phút
+Điều kiện tiên quyết: buổi 7
+Sản phẩm: endpoint trích xuất có cấu trúc/giải thích chấm điểm
 
-## Objectives
+## Mục tiêu
 
-Dùng system/user messages, context, structured output và streaming ở mức đủ dùng; biết timeout, retry và hallucination boundary.
+Dùng system/user messages, context, structured output và streaming ở mức đủ dùng; biết timeout, retry và ranh giới hallucination.
 
-## Mental model
+## Mô hình tư duy
 
 ```text
 Backend chọn context → gửi messages → model trả output → backend validate → frontend render
 ```
 
-## Lab
+## Bài thực hành
 
-Tạo route nhận company profile + evidence, yêu cầu model trả JSON gồm `signals[]`, `summary`, `missing_data[]`, `confidence`. Validate schema; nếu model lỗi thì trả fallback và log.
+Tạo route nhận hồ sơ company + evidence, yêu cầu model trả JSON gồm `signals[]`, `summary`, `missing_data[]`, `confidence`. Kiểm tra schema; nếu model lỗi thì trả fallback và ghi log.
 
-## Guardrail
+## Rào chắn
 
 LLM không tự đổi rubric hoặc tier threshold. Nó chỉ trích xuất/giải thích; rule version và score policy nằm trong code/data.
 
-## Assessment
+## Đánh giá
 
-Pass khi người học chỉ ra phần deterministic, phần probabilistic và cách xử lý output không hợp lệ.
+Đạt khi người học chỉ ra phần tất định, phần xác suất và cách xử lý output không hợp lệ.
 
-## Homework
+## Bài tập về nhà
 
 Viết một prompt có ví dụ tốt/xấu và một test case thiếu dữ liệu.
